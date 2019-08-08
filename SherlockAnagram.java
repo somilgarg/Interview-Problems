@@ -38,7 +38,6 @@ public class SherlockAnagram{
         Arrays.sort(charStr1);
         Arrays.sort(charStr2);
         
-       // System.out.println(str1+ " " + str2);
         for(int i=0;i< charStr1.length;i++){
             if(charStr1[i] != charStr2[i]){
                 return 0;
@@ -51,7 +50,6 @@ public class SherlockAnagram{
         List<String> stringList = new ArrayList<>();
         for(int i=0;i<str.length();i++){
             String subStr = str.substring(i, Math.min((i + index),str.length()));
-            //System.out.println("index "+index +"string is "+subStr);
             stringList.add(subStr);
         }
         return stringList;
